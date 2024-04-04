@@ -29,7 +29,7 @@ func (c Category) GetAllCategories(db *sql.DB) ([]Category, error) {
 			return nil, fmt.Errorf("error while prossing categories")
 		}
 
-		Category.Img = "http://localhost:5500/assets" + Category.Img
+		Category.Img = "https://onepiece-backend.onrender.com/assets" + Category.Img
 
 		Categories = append(Categories, Category)
 	}
